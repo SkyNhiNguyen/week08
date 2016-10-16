@@ -16,7 +16,7 @@ $shape: #626262;
 header {
   display: flex;
   justify-content: space-between;
-  margin: 1.5rem;
+  margin: 1.75rem;
 }
 
 a {
@@ -54,9 +54,9 @@ p {
   font-size: 1.15rem;
   text-transform: uppercase;
   text-align: center;
+  align-self: center;
   color: $links;
   font-weight: bold;
-  padding: 0.5rem;
   letter-spacing: 3px;
 }
 
@@ -73,8 +73,10 @@ p {
 
 .mobile-nav {
   justify-content: flex-start;
+  align-self: center;
   font-size: 1.75rem;
   font-weight: bold;
+  line-height: 1px;
 }
 
 .mobile-nav a {
@@ -99,7 +101,7 @@ article {
   }
 
   li {
-    margin: 1rem;
+    margin: 1rem 0;
     display: flex;
   }
 
@@ -245,12 +247,77 @@ form {
 }
 
 // MOBILE=========================
-@media screen and (min-width: 500px) {
-  .mobile-nav {
+@media screen and (min-width: 1000px) {
+  .mobile-nav,
+  .shopping-bag {
     display: none;
+  }
+
+  header {
+    margin-bottom: 2.5rem;
+    display: flex;
+    flex-flow: row wrap;
+  }
+
+  .utility-nav {
+    width: 100%;
+    display: flex;
+    justify-content: flex-end;
+    margin: 1rem 0 2rem;
+
+    ul {
+      display: flex;
+      align-self: flex-start;
+      justify-content: flex-end;
+    }
+
+    a {
+      text-align: right;
+      margin-left: 1rem;
+      color: $links;
+      font-size: 0.75rem;
+    }
+  }
+
+  .logo {
+    align-self: flex-end;
+    padding: 0;
   }
 
   .main-nav {
     display: flex;
+    justify-content: flex-end;
+    width: 50%;
+
+    ul {
+      display: flex;
+      justify-content: space-between;
+      align-self: flex-end;
+      width: 100%;
+    }
+
+    li {
+      display: flex;
+      justify-content: space-around;
+    }
+
+    a {
+      color: $links;
+      text-align: right;
+    }
+  }
+
+  .section1 {
+    display: flex;
+    width: 100%;
+    flex-flow: row nowrap;
+    background: $light-gray;
+
+    img {
+      display: flex;
+      width: 60%;
+      margin: auto;
+      margin-bottom: 0;
+    }
   }
 }
