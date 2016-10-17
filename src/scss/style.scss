@@ -241,7 +241,7 @@ form {
 }
 
 // MOBILE=========================
-@media screen and (min-width: 1000px) {
+@media screen and (min-width: 1250px) {
   .mobile-nav,
   .shopping-bag {
     display: none;
@@ -338,7 +338,7 @@ form {
     display: flex;
     margin: 5% 10%;
     background: $light-gray;
-    border: 2px solid $light-gray;
+    border: 3px solid $light-gray;
 
     img {
       display: none;
@@ -454,20 +454,31 @@ form {
       }
     }
 
-    .social-links-2 {
+    .social-term {
       width: 25%;
       margin: 5%;
       display: flex;
+      flex-flow: column;
+      align-items: flex-end;
       justify-content: flex-end;
 
-      ul {
+      .social-links-2 {
         display: flex;
-        align-self: center;
+
+        ul {
+          display: flex;
+          align-self: center;
+        }
+
+        img {
+          width: 3rem;
+          margin: 1rem;
+        }
       }
 
-      img {
-        width: 3rem;
-        margin: 1rem;
+      .term {
+        margin: 0;
+        padding-top: 1rem;
       }
     }
   }
