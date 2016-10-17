@@ -67,7 +67,10 @@ p {
 //Nav------------------
 
 .utility-nav,
-.main-nav {
+.main-nav,
+.footer-nav,
+.logo-2,
+.social-links-2 {
   display: none;
 }
 
@@ -101,7 +104,7 @@ article {
   }
 
   a {
-    margin: 1rem;
+    margin: 1rem 0.75rem;
     display: flex;
     width: 17rem;
     padding: 1.25rem 4rem;
@@ -205,16 +208,15 @@ form {
   }
 }
 
-.social-links,
+.social-links-1,
 .term {
   display: flex;
   justify-content: center;
   flex-flow: row nowrap;
-  margin: 2rem;
+  margin: 2rem 0;
 
   ul {
     display: flex;
-    justify-content: center;
   }
 
   a {
@@ -350,7 +352,18 @@ form {
     }
 
     .classic {
-      justify-content: flex-end;
+      margin-left: 50%;
+    }
+  }
+
+  .section3 {
+    display: flex;
+    background: $light-gray;
+    justify-content: center;
+    margin-bottom: 5%;
+
+    img {
+      display: none;
     }
   }
 }
