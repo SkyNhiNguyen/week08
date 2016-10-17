@@ -96,20 +96,17 @@ article {
 .button-01 {
   ul {
     display: flex;
-    justify-content: space-around;
+    justify-content: center;
     flex-flow: row wrap;
   }
 
-  li {
-    margin: 1rem 0;
-    display: flex;
-  }
-
   a {
+    margin: 1rem;
+    display: flex;
     width: 17rem;
     padding: 1.25rem 4rem;
+    justify-content: center;
     background: $links;
-    text-align: center;
     font-size: 1rem;
     color: #fff;
     letter-spacing: 2px;
@@ -127,13 +124,10 @@ article {
     justify-content: center;
   }
 
-  li {
-    margin: 1rem;
-  }
-
   a {
     font-weight: bold;
     font-size: 1rem;
+    margin: 1rem;
     color: $links;
     letter-spacing: 2px;
   }
@@ -216,19 +210,17 @@ form {
   display: flex;
   justify-content: center;
   flex-flow: row nowrap;
+  margin: 2rem;
 
   ul {
     display: flex;
-    justify-content: space-around;
-  }
-
-  li {
-    margin: 1rem;
+    justify-content: center;
   }
 
   a {
     text-transform: capitalize;
     color: $links;
+    margin: 1rem;
   }
 
   img {
@@ -296,11 +288,6 @@ form {
       width: 100%;
     }
 
-    li {
-      display: flex;
-      justify-content: space-around;
-    }
-
     a {
       color: $links;
       text-align: right;
@@ -309,15 +296,61 @@ form {
 
   .section1 {
     display: flex;
+    justify-content: flex-start;
     width: 100%;
     flex-flow: row nowrap;
     background: $light-gray;
+    padding-right: 5%;
 
     img {
       display: flex;
-      width: 60%;
+      width: 50%;
       margin: auto;
       margin-bottom: 0;
+    }
+  }
+
+  .header {
+    border-bottom: 0;
+    padding-bottom: 0;
+    align-self: center;
+    width: 30%;
+
+    p {
+      margin: 0 2rem;
+    }
+  }
+
+  .button-01 {
+    ul {
+      justify-content: center;
+    }
+
+    a {
+      width: 10rem;
+      padding: 1.25rem 0;
+    }
+  }
+
+  .section2 {
+    display: flex;
+    margin: 5% 10%;
+    background: $light-gray;
+    border: 2px solid $light-gray;
+
+    img {
+      display: none;
+    }
+
+    article {
+      width: 50%;
+      background: #fff;
+      margin: 0;
+      padding: 10%;
+    }
+
+    .classic {
+      justify-content: flex-end;
     }
   }
 }
