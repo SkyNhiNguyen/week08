@@ -24,6 +24,10 @@ a {
   text-transform: uppercase;
 }
 
+a:hover {
+  opacity: 0.5;
+}
+
 li {
   list-style: none;
 }
@@ -90,7 +94,7 @@ p {
 .hero-img {
   width: 100%;
 }
-//articler------------------
+//article------------------
 
 article {
   margin: 3rem;
